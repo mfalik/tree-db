@@ -1,5 +1,3 @@
-USE [tree-db]
-GO
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[tree]') AND type in (N'U'))
 ALTER TABLE [dbo].[tree] DROP CONSTRAINT IF EXISTS [FK_tree_species1]
 GO
